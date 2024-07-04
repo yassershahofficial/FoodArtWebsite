@@ -1,0 +1,27 @@
+*,html,body{
+    padding: 0;
+    margin: 0;
+    font-family: "Poppins", sans-serif;
+    scroll-behavior: smooth;
+    font-size: 16px;
+}
+a {
+    cursor: pointer;
+    text-decoration: none;
+}
+button {
+    cursor: pointer;
+    border: none;
+}
+button p{
+    margin-right: 10px;
+}
+h1{
+    font-size: 7rem;
+}
+h2{
+    font-size: 3rem;
+}
+h3{
+    font-size: 1.3rem;
+}
