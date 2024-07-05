@@ -17,10 +17,13 @@
 .home-left h1{
     max-width: 22rem;
 }
+.home-left h3{
+    min-width: 30rem;
+}
 .home-left button{
     display: flex;
     padding: 10px 20px;
-    margin-top: 1rem;
+    margin-top: 3rem;
 }
 .home-right{
     display: flex;

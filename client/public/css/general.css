@@ -4,6 +4,11 @@
     font-family: "Poppins", sans-serif;
     scroll-behavior: smooth;
     font-size: 16px;
+    z-index: 4;
+}
+h1,h2,h3,h4,p{
+    position: relative;
+    z-index: 5;
 }
 a {
     cursor: pointer;
@@ -24,4 +29,14 @@ h2{
 }
 h3{
     font-size: 1.3rem;
+}
+.mar-bot{
+    margin-bottom: 7%;
+}
+.mar-sides{
+    margin-left: 3%;
+    margin-right: 3%;
+}
+.background{
+    z-index: 1;
 }
