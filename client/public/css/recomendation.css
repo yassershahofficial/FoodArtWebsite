@@ -19,7 +19,7 @@
 .reco-cards-maincard,.reco-cards-sidecard{
     background-color: blue;
     position: relative;
-    padding: 5rem 2%;
+    padding: 5rem 2% 2rem 2%;
     border-radius: 10%;
 }
 .reco-cards-maincard img, .reco-cards-sidecard img{
@@ -40,9 +40,9 @@
 .reco-deco{
     background-color: yellow;
     position: absolute;
-    top: -10rem;
-    right: -10rem; 
-    height: 50vw;
-    width: 50vw;
+    top: -5rem;
+    right: -25rem; 
+    height: 120vh;
+    width: 120vh;
     border-radius: 50%;
 }
