@@ -3,13 +3,14 @@
     display: grid;
     grid-template-columns: 60% 40%;
     margin-top: 40px;
-    overflow: hidden;
     height: 80vh;
+    overflow-y: hidden;
+    overflow-x: hidden;
 }
 .home-left{
     display: flex;
     flex-direction: column;
-    /* background-color: red; */
+    background-color: transparent;
     justify-content: center;
     align-items: start;
     padding-left: 10%;
@@ -38,4 +39,5 @@
     min-width: 14rem;
     max-width: 30rem;
     margin-left: 10px;
+    overflow-x: visible;
 }
