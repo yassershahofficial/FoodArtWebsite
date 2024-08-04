@@ -23,3 +23,13 @@
     object-fit: cover;
     border-radius: 5%;
 }
+#map{
+    height: 500px;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+}
+gmp-map {
+    height: 80%;
+    width: 100%;
+}

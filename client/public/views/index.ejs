@@ -16,6 +16,12 @@
     <!-- Icon ; bwh ni example-->
     <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.4.2/uicons-bold-straight/css/uicons-bold-straight.css'>
     <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.4.2/uicons-solid-rounded/css/uicons-solid-rounded.css'>
+
+    
+    <!-- Google Map API -->
+    <script async src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCtMSH-d_oSvfYesrGSjmtFUNqEEHZ49JM&callback=console.debug&libraries=maps,marker&v=beta">
+    </script>
+
 </head>
 <body>
     <div id="header">
@@ -119,7 +125,9 @@
         </div>
     </div>
     <div id="map">
-
+        <gmp-map center="6.406998634338379,100.18043518066406" zoom="18" map-id="DEMO_MAP_ID">
+        <gmp-advanced-marker position="6.406998634338379,100.18043518066406" title="My location"></gmp-advanced-marker>
+        </gmp-map>
     </div>
     <div id="quote">
 
@@ -127,5 +135,7 @@
     <div id="footer">
         
     </div>
+
 </body>
+
 </html>
