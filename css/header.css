@@ -1,0 +1,22 @@
+#header{
+    height: 60px;
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    align-content: center;
+    z-index: 6;
+}
+.header-ham i{
+    font-size: 1.6rem;
+}
+.header-ham{
+    background-color: transparent;
+    padding: 2px 8px;
+    margin-left: 6%;
+}
+.header-ham:hover{
+    background-color: rgba(210, 210, 210, 0.6);
+}
+.header-ham:active{
+    opacity: 0.5;
+}

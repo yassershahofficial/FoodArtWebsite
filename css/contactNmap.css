@@ -1,18 +1,16 @@
 #contact{
-    background-color: aquamarine;
+    background-color: var(--darkwhite);
     position: relative;
     display: grid;
     grid-template-columns: 50% 50%;
     overflow: hidden;
 }
 .contact-left{
-    background-color: yellow;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 .contact-right{
-    background-color: red;
     text-align: left;
     align-content: center;
     margin: 0 auto;
@@ -24,6 +22,7 @@
     border-radius: 5%;
 }
 #map{
+    background-color: var(--darkwhite);
     height: 500px;
     width: 100vw;
     display: flex;
