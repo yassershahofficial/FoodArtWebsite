@@ -11,7 +11,6 @@ app.use(express.static("../client/public"))
 
 app.get('/', (req,res) => {
     res.render("index");
-
 })
 
 app.listen(PORT, () => console.log(`Server is listening in ${PORT}`))
