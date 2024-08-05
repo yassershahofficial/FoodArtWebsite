@@ -1,5 +1,5 @@
 #reason{
-    position: relative;
+    background-color: var(--darkwhite); 
     display: block;
     overflow: visible;
     text-align: center;
@@ -16,4 +16,15 @@
     width: 6rem;
     height: 6rem;
     margin-bottom: 1rem;
+}
+
+@media(max-width:750px){
+    .reason-lists{
+        grid-template-columns: 6rem 6rem 6rem;
+        column-gap: 2%;
+    }
+    .reason-lists-sub img{
+        width: 4rem;
+        height: 4rem;
+    }
 }

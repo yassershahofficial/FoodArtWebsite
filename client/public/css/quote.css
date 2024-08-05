@@ -21,3 +21,25 @@
     width: 80vh;
     border-radius: 50%;
 }
+@media(max-width:1000px){
+    .quotes{
+        font-size: 2.2rem;
+    }
+    .quo-deco{
+        top: 8rem;
+        left: -8rem; 
+        height: 60vh;
+        width: 60vh;
+    }
+}
+@media(max-width:750px){
+    .quotes{
+        font-size: 1.6rem;
+    }
+    .quo-deco{
+        top: 12rem;
+        left: -5rem; 
+        height: 30vh;
+        width: 30vh;
+    }
+}

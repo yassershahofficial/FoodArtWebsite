@@ -12,3 +12,13 @@
 .footer-body a{
     font-size: 0.8rem;
 }
+
+@media(max-width:750px){
+    #footer{
+        grid-template-columns: 100%;
+        padding: 3rem 4rem;
+    }
+    #footer div{
+        margin-bottom: 3rem;
+    }
+}

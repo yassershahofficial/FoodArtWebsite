@@ -11,8 +11,9 @@
 }
 .header-ham{
     background-color: transparent;
-    padding: 2px 8px;
+    padding: 3px 6px;
     margin-left: 6%;
+    border-radius: 50%;
 }
 .header-ham:hover{
     background-color: rgba(210, 210, 210, 0.6);
