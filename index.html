@@ -5,27 +5,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Food Art</title>
     <!-- CSS styling -->
-    <link rel="stylesheet" href="./css/general.css" type="text/css">
-    <link rel="stylesheet" href="./css/header.css" type="text/css">
-    <link rel="stylesheet" href="./css/home.css" type="text/css">
-    <link rel="stylesheet" href="./css/recomendation.css" type="text/css">
-    <link rel="stylesheet" href="./css/reason.css" type="text/css">
-    <link rel="stylesheet" href="./css/contactNmap.css" type="text/css">
-    <link rel="stylesheet" href="./css/quote.css" type="text/css">
-    <link rel="stylesheet" href="./css/footer.css" type="text/css">
-    <!-- Icon ; bwh ni example-->
+    <link rel="stylesheet" href="/css/general.css" type="text/css">
+    <link rel="stylesheet" href="/css/header.css" type="text/css">
+    <link rel="stylesheet" href="/css/home.css" type="text/css">
+    <link rel="stylesheet" href="/css/recomendation.css" type="text/css">
+    <link rel="stylesheet" href="/css/reason.css" type="text/css">
+    <link rel="stylesheet" href="/css/contactNmap.css" type="text/css">
+    <link rel="stylesheet" href="/css/quote.css" type="text/css">
+    <link rel="stylesheet" href="/css/footer.css" type="text/css">
+    <!-- Icon -->
     <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.4.2/uicons-bold-straight/css/uicons-bold-straight.css'>
     <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.4.2/uicons-solid-rounded/css/uicons-solid-rounded.css'>
-
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.5.1/uicons-bold-rounded/css/uicons-bold-rounded.css'>
     
     <!-- Google Map API -->
-    <script async src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCtMSH-d_oSvfYesrGSjmtFUNqEEHZ49JM&callback=console.debug&libraries=maps,marker&v=beta">
-    </script>
+    <!-- <script async src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCtMSH-d_oSvfYesrGSjmtFUNqEEHZ49JM&callback=console.debug&libraries=maps,marker&v=beta">
+    </script> -->
 
 </head>
 <body>
     <div id="header">
-
+        <button class="header-ham"><i class="fi fi-br-bars-sort"></i></button>
     </div>
     <div id="home">
         <div class="home-left">
@@ -41,7 +41,7 @@
             </button>
         </div>
         <div class="home-right background">
-            <img src="./images/homeFood.png" alt="">
+            <img src="../images/homeFood.png" alt="">
         </div>
     </div>
     <div id="recomendation">
@@ -50,7 +50,7 @@
         </h2>
         <div class="reco-cards mar-bot mar-sides">
             <div class="reco-cards-sidecard">
-                <img src="./images/menu.png" alt="">
+                <img src="../images/menu.png" alt="">
                 <h3>Food Name</h3>
                 <h4>
                     Everyone was curious about the large white blimp that 
@@ -64,7 +64,7 @@
                 </p>
             </div>
             <div class="reco-cards-maincard">
-                <img src="./images/menu2.png" alt="">
+                <img src="../images/menu2.png" alt="">
                 <h3>Food Name</h3>
                 <h4>
                     Everyone was curious about the large white blimp that 
@@ -78,7 +78,7 @@
                 </p>
             </div>
             <div class="reco-cards-sidecard">
-                <img src="./images/menu3.png" alt="">
+                <img src="../images/menu3.png" alt="">
                 <h3>Food Name</h3>
                 <h4>
                     Everyone was curious about the large white blimp that 
@@ -99,22 +99,22 @@
         <h2>Why Choose Us</h2>
         <div class="reason-lists">
             <div class="reason-lists-sub">
-                <img src="./images/fresh.png" alt="">
+                <img src="../images/fresh.png" alt="">
                 <h4>100% Fresh</h4>
             </div>
             <div class="reason-lists-sub">
-                <img src="./images/vip.png" alt="">
+                <img src="../images/vip.png" alt="">
                 <h4>Exclusive</h4>
             </div>
             <div class="reason-lists-sub">
-                <img src="./images/star.png" alt="">
+                <img src="../images/star.png" alt="">
                 <h4>High-Quality</h4>
             </div>
         </div>
     </div>
     <div id="contact">
         <div class="contact-left">
-            <img src="./images/building.jpg" alt="">
+            <img src="../images/building.jpg" alt="">
         </div>
         <div class="contact-right">
             <h2 class="mar-bot">Contact Us</h2>
@@ -130,10 +130,29 @@
         </gmp-map>
     </div>
     <div id="quote">
-
+        <h2 class="quotes">WE CREATE VISUAL FEAST</h2>
+        <h2 class="quotes">FOR YOUR EYES & PALATE</h2>
+        <div class="quo-deco background"></div>
     </div>
     <div id="footer">
-        
+        <div class="footer-left">
+            <p class="footer-head mar-bot">COMPANY</p>
+            <p class="footer-body">@2024 All-Right Reserved</p>
+        </div>
+        <div class="footer-mid">
+            <p class="footer-head mar-bot">QUICK LINKS</p>
+            <p class="footer-body"><a href="">HOME</a></p>
+            <p class="footer-body"><a href="">POPULAR DISHES</a></p>
+            <p class="footer-body"><a href="">WHY CHOOSE US</a></p>
+            <p class="footer-body"><a href="">CONTACT US</a></p>
+            <p class="footer-body"><a href="">LOCATION</a></p>
+        </div>
+        <div class="footer-right">
+            <p class="footer-head mar-bot">HELP CENTRE</p>
+            <p class="footer-body"><a href="">TERMS & CONDITIONS</a></p>
+            <p class="footer-body"><a href="">REFUND POLICY</a></p>
+            <p class="footer-body"><a href="">PRIVACY POLICY</a></p>
+        </div>
     </div>
 
 </body>

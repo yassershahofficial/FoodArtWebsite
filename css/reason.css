@@ -6,7 +6,7 @@
     padding: 3rem 0;
 }
 .reason-lists{
-    display: grid;
+    display: grid;  
     grid-template-columns: 10rem 10rem 10rem;
     justify-content: center;
     column-gap: 2%;

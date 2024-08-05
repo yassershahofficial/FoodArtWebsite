@@ -1,0 +1,14 @@
+#footer{
+    display: grid;
+    grid-template-columns: 30% 30% 30%;
+    background-color: var(--darkwhite);
+    width: 100vw;
+    padding: 3rem 3%;
+    justify-content: flex-end
+}
+.footer-head{
+    font-weight: bold;
+}
+.footer-body a{
+    font-size: 0.8rem;
+}

@@ -1,0 +1,23 @@
+#quote{
+    background-color: var(--white);
+    position: relative;
+    display: block;
+    height: 40vh;
+    overflow: hidden;
+    text-align: center;
+    align-content: center;
+}
+.quotes{
+    margin: auto 0;
+    height: 60px;
+    justify-content: center;
+}
+.quo-deco{
+    background-color: var(--grey);
+    position: absolute;
+    top: 4rem;
+    left: -14rem; 
+    height: 80vh;
+    width: 80vh;
+    border-radius: 50%;
+}
