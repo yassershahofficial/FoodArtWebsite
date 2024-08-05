@@ -1,9 +1,8 @@
 #home{
-    background-color: aqua;
+    background-color: var(--darkwhite);
     display: grid;
     grid-template-columns: 60% 40%;
-    margin-top: 40px;
-    height: 80vh;
+    height: 90vh;
     overflow-y: hidden;
     overflow-x: hidden;
 }
@@ -20,16 +19,17 @@
 }
 .home-left h3{
     min-width: 30rem;
+    color: var(--grey);
 }
 .home-left button{
     display: flex;
+    background-color: var(--white);
     padding: 10px 20px;
     margin-top: 3rem;
 }
 .home-right{
     display: flex;
     position: relative;
-    /* background-color: blue; */
 }
 .home-right img{
     position: absolute;
