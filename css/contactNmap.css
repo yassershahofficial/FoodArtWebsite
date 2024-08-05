@@ -32,3 +32,11 @@ gmp-map {
     height: 80%;
     width: 100%;
 }
+
+@media(max-width:750px){
+    #contact{
+        grid-template-columns: 100%;
+        grid-template-rows: 50% 50%;
+        overflow: hidden;
+    }
+}

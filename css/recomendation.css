@@ -1,12 +1,16 @@
 #recomendation{
-    background-color: blanchedalmond;
+    background-color: var(--darkwhite);
     position: relative;
     display: block;
     overflow: visible;
     text-align: center;
+    padding-top: 2.4rem;
 }
 #recomendation h2{
-    padding: 5rem 0;
+    padding: 1.5rem 0 5rem;
+}
+#recomendation h4{
+    color: var(--grey);
 }
 #recomendation a{
     padding-bottom: 3rem;
@@ -17,9 +21,9 @@
     column-gap: 2%;
 }
 .reco-cards-maincard,.reco-cards-sidecard{
-    background-color: blue;
+    background-color: var(--white);
     position: relative;
-    padding: 5rem 2% 2rem 2%;
+    padding: 5rem 2% 0.6rem 2%;
     border-radius: 10%;
 }
 .reco-cards-maincard img, .reco-cards-sidecard img{
@@ -38,11 +42,26 @@
     min-width: none;
 }
 .reco-deco{
-    background-color: yellow;
+    background-color: var(--grey);
     position: absolute;
     top: -5rem;
-    right: -25rem; 
+    right: -20rem; 
     height: 120vh;
     width: 120vh;
     border-radius: 50%;
+}
+@media(max-width:1000px){
+    .reco-deco{
+        top: -10rem;
+        right: -40rem; 
+        height: 140vh;
+    }
+}
+@media(max-width:640px){
+    .reco-deco{
+        top: -20rem;
+        right: -70rem; 
+        height: 180vh;
+        width: 180vh;
+    }
 }

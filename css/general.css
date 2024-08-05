@@ -18,11 +18,11 @@ h1,h2,h3,h4,p,a{
     position: relative;
     z-index: 5;
 }
-a {
+a{
     cursor: pointer;
     text-decoration: none;
 }
-button {
+button{
     cursor: pointer;
     border: none;
 }
@@ -50,4 +50,16 @@ h4{
 }
 .background{
     z-index: 1;
+}
+
+@media(max-width:750px){
+    h2{
+        font-size: 2.5rem;
+    }
+    h3{
+        font-size: 1rem;
+    }
+    h4{
+        font-size: 0.9rem;
+    }
 }
