@@ -13,11 +13,14 @@
     <link rel="stylesheet" href="./css/contactNmap.css" type="text/css">
     <link rel="stylesheet" href="./css/quote.css" type="text/css">
     <link rel="stylesheet" href="./css/footer.css" type="text/css">
+    <!-- Animations -->
+    <link rel="stylesheet" href="./css/animation.css" type="text/css">
     <!-- Icon -->
     <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.4.2/uicons-bold-straight/css/uicons-bold-straight.css'>
     <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.4.2/uicons-solid-rounded/css/uicons-solid-rounded.css'>
     <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.5.1/uicons-bold-rounded/css/uicons-bold-rounded.css'>
-    
+    <!-- JavaScript -->
+    <script defer src="./app.js"></script>
     <!-- Google Map API -->
     <!-- <script async src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCtMSH-d_oSvfYesrGSjmtFUNqEEHZ49JM&callback=console.debug&libraries=maps,marker&v=beta">
     </script> -->
@@ -29,19 +32,19 @@
     </div>
     <div id="home">
         <div class="home-left">
-            <h1>
+            <h1 class="hiddenL animate --delay-fast">
                 Food Art
             </h1>
-            <h3>
+            <h3 class="hiddenL animate --delay-fast-off2">
                 Elevating Your Food, One Plate at a Time
             </h3>
-            <button>
+            <button class="hiddenL --delay-fast-off3">
                 <p>Dine Now</p>
                 <i class="fi fi-sr-marker"></i>
             </button>
         </div>
         <div class="home-right background">
-            <img src="./images/homeFood.png" alt="">
+            <img class="hiddenRTR animate --delay-normal" src="./images/homeFood.png" alt="">
         </div>
     </div>
     <div id="recomendation">
@@ -49,7 +52,7 @@
             Popular Dishes
         </h2>
         <div class="reco-cards mar-bot mar-sides">
-            <div class="reco-cards-sidecard">
+            <div class="reco-cards-sidecard hiddenL animate --delay-fast">
                 <img src="./images/menu.png" alt="">
                 <h3>Food Name</h3>
                 <h4>
@@ -63,7 +66,7 @@
                     330 calories
                 </p>
             </div>
-            <div class="reco-cards-maincard">
+            <div class="reco-cards-maincard hiddenL animate --delay-fast-off1">
                 <img src="./images/menu2.png" alt="">
                 <h3>Food Name</h3>
                 <h4>
@@ -77,7 +80,7 @@
                     330 calories
                 </p>
             </div>
-            <div class="reco-cards-sidecard">
+            <div class="reco-cards-sidecard hiddenL animate --delay-fast-off3">
                 <img src="./images/menu3.png" alt="">
                 <h3>Food Name</h3>
                 <h4>
@@ -98,15 +101,15 @@
     <div id="reason">
         <h2>Why Choose Us</h2>
         <div class="reason-lists">
-            <div class="reason-lists-sub">
+            <div class="reason-lists-sub hiddenL animate --delay-fast">
                 <img src="./images/fresh.png" alt="">
                 <h4>100% Fresh</h4>
             </div>
-            <div class="reason-lists-sub">
+            <div class="reason-lists-sub hiddenL animate --delay-fast-off1">
                 <img src="./images/vip.png" alt="">
                 <h4>Exclusive</h4>
             </div>
-            <div class="reason-lists-sub">
+            <div class="reason-lists-sub hiddenL animate --delay-fast-off2">
                 <img src="./images/star.png" alt="">
                 <h4>High-Quality</h4>
             </div>
@@ -130,8 +133,8 @@
         </gmp-map>
     </div>
     <div id="quote">
-        <h2 class="quotes">WE CREATE VISUAL FEAST</h2>
-        <h2 class="quotes">FOR YOUR EYES & PALATE</h2>
+        <h2 class="quotes hiddenL animate --delay-normal">WE CREATE VISUAL FEAST</h2>
+        <h2 class="quotes hiddenL animate --delay-normal">FOR YOUR EYES & PALATE</h2>
         <div class="quo-deco background"></div>
     </div>
     <div id="footer">

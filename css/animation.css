@@ -1,0 +1,64 @@
+/* Utility Classes */
+.hiddenRTR,.hiddenL{
+    opacity: 0;   
+    animation-fill-mode: both;
+}
+.--infinite{
+    animation-iteration-count: infinite;
+}
+.--delay-1s{
+    animation-delay: 1s;
+}
+.--delay-fast{
+    animation-duration: 0.6s;
+}
+.--delay-fast-off1{
+    animation-duration: 0.7s;
+}
+.--delay-fast-off2{
+    animation-duration: 0.8s;
+}
+.--delay-fast-off3{
+    animation-duration: 0.9s;
+}
+.--delay-fast-off4{
+    animation-duration: 1s;
+}
+.--delay-normal{
+    animation-duration: 1.3s;
+}
+.--delay-slow{
+    animation-duration: 2s;
+}
+/* Animations */
+@keyframes slideInRightTopRotate{
+    from{
+        transform: translate(400px,-200px) rotate(180deg);
+        opacity: 0;
+    }
+    70%{
+        opacity: 1;
+    }
+    to{
+        transform: translate(0,0) rotate(0deg);
+        opacity: 1;
+    }
+}
+.slideInRightTopRotate{
+    animation-name: slideInRightTopRotate;
+    animation-timing-function: ease-in-out;
+}
+@keyframes slideInLeft{
+    from{
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    to{
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+.slideInLeft{
+    animation-name: slideInLeft;
+    animation-timing-function: ease-in-out;
+}
