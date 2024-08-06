@@ -42,26 +42,28 @@
     min-width: none;
 }
 .reco-deco{
-    background-color: var(--grey);
     position: absolute;
-    top: -5rem;
-    right: -20rem; 
-    height: 120vh;
-    width: 120vh;
-    border-radius: 50%;
+    top: -25%;
+    right: 0%;
+    background-color: var(--grey);
+    width: 33rem;
+    height: 66rem;
+    border-radius: 33rem 0 0  33rem;
+    z-index: 3;
 }
-@media(max-width:1000px){
+@media(max-width:1300px){
     .reco-deco{
-        top: -10rem;
-        right: -40rem; 
-        height: 140vh;
+        top: -25%;
+        width: 25rem;
+        height: 50rem;
+        border-radius: 25rem 0 0  25rem;
     }
 }
 @media(max-width:640px){
     .reco-deco{
-        top: -20rem;
-        right: -70rem; 
-        height: 180vh;
-        width: 180vh;
+        top: -25%;
+        width: 15rem;
+        height: 30rem;
+        border-radius: 15rem 0 0  15rem;
     }
 }

@@ -3,8 +3,7 @@
     display: grid;
     grid-template-columns: 60% 40%;
     height: 90vh;
-    overflow-y: hidden;
-    overflow-x: hidden;
+    overflow: hidden;
 }
 .home-left{
     display: flex;

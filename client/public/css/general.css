@@ -13,6 +13,7 @@
 body{
     overflow-x: hidden;
     color: var(--black);
+    width: 100%;
 }
 h1,h2,h3,h4,p,a{
     position: relative;
@@ -21,13 +22,15 @@ h1,h2,h3,h4,p,a{
 a{
     cursor: pointer;
     text-decoration: none;
+    color: var(--black);
 }
 button{
     cursor: pointer;
     border: none;
 }
-button p{
+button a{
     margin-right: 10px;
+    font-size: 1.1rem;
 }
 h1{
     font-size: 7rem;
@@ -38,7 +41,7 @@ h2{
 h3{
     font-size: 1.3rem;
 }
-h4{
+h4,p{
     font-size: 1.1rem;
 }
 .mar-bot{
