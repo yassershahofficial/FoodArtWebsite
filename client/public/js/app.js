@@ -11,7 +11,7 @@ const slideInRightTopRotate = new IntersectionObserver((entries) => {
 
 const slideInLeft = new IntersectionObserver((entries) => {
     entries.forEach((entry) => {
-        console.log(entry)
+        // console.log(entry)
         if(entry.isIntersecting){
             entry.target.classList.add('slideInLeft');
         } 
@@ -25,3 +25,9 @@ const hiddenRTR = document.querySelectorAll('.hiddenRTR');
 const hiddenL = document.querySelectorAll('.hiddenL');
 hiddenRTR.forEach((el) => slideInRightTopRotate.observe(el));
 hiddenL.forEach((el) => slideInLeft.observe(el));
+
+const navBtn = document.getElementById('header-ham');
+
+navBtn.addEventListener("click", (e) => {
+    console.log("Pressed");
+})
