@@ -8,21 +8,28 @@
     --white: #fff;
     --darkwhite: #f5f5f7;
     --grey: #6e6e73;
+    --darkgrey: #1F1F1F;
     --black: #1d1d1f;
+    /* --white: #F5EFED; */
+    --darkblue: #141414;
+    --red: #CC0300;
 }
 body{
     overflow-x: hidden;
-    color: var(--black);
+    color: var(--darkwhite);
+    background-color: var(--darkblue);
     width: 100%;
 }
 h1,h2,h3,h4,p,a{
     position: relative;
     z-index: 5;
 }
+i,a{
+    color: var(--darkwhite);
+}
 a{
     cursor: pointer;
     text-decoration: none;
-    color: var(--black);
 }
 button{
     cursor: pointer;

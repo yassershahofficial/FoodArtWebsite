@@ -1,5 +1,5 @@
 #quote{
-    background-color: var(--white);
+    background-color: var(--darkgrey);
     position: relative;
     display: block;
     height: 40vh;
@@ -14,7 +14,7 @@
     justify-content: center;
 }
 .quo-deco{
-    background-color: var(--grey);
+    background-color: var(--red);
     position: absolute;
     top: 4rem;
     left: -14rem; 

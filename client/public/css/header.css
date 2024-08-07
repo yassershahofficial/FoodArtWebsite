@@ -16,7 +16,7 @@
     border-radius: 50%;
 }
 .header-ham:hover{
-    background-color: rgba(210, 210, 210, 0.6);
+    background-color: var(--red);
 }
 .header-ham:active{
     opacity: 0.5;
@@ -31,6 +31,7 @@
     z-index: 7;
     text-align: center;
     align-items: center;
+    visibility: hidden;
 }
 #menu div{
     height: 100%;

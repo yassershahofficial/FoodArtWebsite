@@ -1,5 +1,4 @@
 #recomendation{
-    background-color: var(--darkwhite);
     position: relative;
     display: block;
     overflow: visible;
@@ -9,7 +8,10 @@
 #recomendation h2{
     padding: 1.5rem 0 5rem;
 }
-#recomendation h4{
+#recomendation h3{
+    color: var(--black);
+}
+#recomendation h4, #recomendation p{
     color: var(--grey);
 }
 #recomendation a{
@@ -45,7 +47,7 @@
     position: absolute;
     top: -25%;
     right: 0%;
-    background-color: var(--grey);
+    background-color: var(--red);
     width: 33rem;
     height: 66rem;
     border-radius: 33rem 0 0  33rem;
