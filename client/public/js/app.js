@@ -39,3 +39,7 @@ headerMenu.addEventListener("click", (e) =>{
     // console.log("Menu is clicked");
     menu.style.visibility = "hidden";
 })
+
+function closeMenu(){
+    menu.style.visibility = "hidden";
+}
