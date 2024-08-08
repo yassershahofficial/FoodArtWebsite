@@ -58,6 +58,9 @@ h4,p{
     margin-left: 3%;
     margin-right: 3%;
 }
+.mar-top{
+    margin-top: 9rem;
+}
 .background{
     z-index: 1;
 }

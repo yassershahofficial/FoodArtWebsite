@@ -73,3 +73,15 @@
 .fi-br-circle-xmark:hover{
     background-color: var(--red);
 }
+@media(max-width:640px){
+    #menu{
+        width: 100%;
+    }
+    .fi-br-circle-xmark{
+        right: 1rem;
+        left: unset;
+    }
+    #menu div a{
+        margin-left: -0.6rem;
+    }
+}
