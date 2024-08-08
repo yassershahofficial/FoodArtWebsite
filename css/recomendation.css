@@ -1,5 +1,4 @@
-#recomendation{
-    background-color: var(--darkwhite);
+/* #recomendation{
     position: relative;
     display: block;
     overflow: visible;
@@ -9,7 +8,10 @@
 #recomendation h2{
     padding: 1.5rem 0 5rem;
 }
-#recomendation h4{
+#recomendation h3{
+    color: var(--black);
+}
+#recomendation h4, #recomendation p{
     color: var(--grey);
 }
 #recomendation a{
@@ -41,27 +43,92 @@
     max-width: 16rem;
     min-width: none;
 }
-.reco-deco{
-    background-color: var(--grey);
-    position: absolute;
-    top: -5rem;
-    right: -20rem; 
-    height: 120vh;
-    width: 120vh;
-    border-radius: 50%;
+
+ */
+
+ #recomendation{
+    position: relative;
+    display: block;
+    justify-content: center;
+    text-align: center;
 }
-@media(max-width:1000px){
+.reco-cards{
+    display: grid;
+    grid-template-columns: 30% 30% 30%;
+    column-gap: 5%;
+    justify-content: center;
+}
+.reco-cards-subcard{
+    display: flex;
+    position: relative;
+    text-align: left;
+    align-items: end;
+    justify-content: center;
+    max-width: 60rem;
+}
+.reco-cards-subcard:hover img{
+    filter: blur(1rem);
+    -webkit-filter: blur(1rem);
+}
+.reco-cards-subcard:hover .reco-cards-subcard-desc{
+    visibility: visible;
+}
+.reco-cards-subcard-desc{
+    position: absolute;
+    right: 0;
+    width: 70%;
+    visibility: hidden;
+    transition: all 0.2s;
+}
+.reco-cards-subcard img{
+    width: 20rem;
+    object-fit: contain;
+    transition: all 0.6s;
+}
+.reco-deco{
+    position: absolute;
+    top: -25%;
+    right: 0%;
+    background-color: var(--red);
+    width: 33rem;
+    height: 66rem;
+    border-radius: 33rem 0 0  33rem;
+    z-index: 3;
+}
+@media(max-width:1300px){
     .reco-deco{
-        top: -10rem;
-        right: -40rem; 
-        height: 140vh;
+        top: -25%;
+        width: 25rem;
+        height: 50rem;
+        border-radius: 25rem 0 0  25rem;
+    }
+    .reco-cards-subcard img{
+        width: 16rem;
+    }
+    .reco-cards-subcard-desc{
+        width: 90%;
+    }
+}
+@media(max-width:800px){
+    .reco-cards-subcard img{
+        width: 10rem;
+    }
+    .reco-cards-subcard-desc{
+        width: 100%;
+    }
+    .reco-cards-subcard-desc h4{
+        visibility: hidden;
+        display: none;
     }
 }
 @media(max-width:640px){
     .reco-deco{
-        top: -20rem;
-        right: -70rem; 
-        height: 180vh;
-        width: 180vh;
+        top: -25%;
+        width: 15rem;
+        height: 30rem;
+        border-radius: 15rem 0 0  15rem;
+    }
+    .reco-cards-subcard img{
+        width: 8rem;
     }
 }

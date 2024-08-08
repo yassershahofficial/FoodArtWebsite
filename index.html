@@ -13,12 +13,17 @@
     <link rel="stylesheet" href="./css/contactNmap.css" type="text/css">
     <link rel="stylesheet" href="./css/quote.css" type="text/css">
     <link rel="stylesheet" href="./css/footer.css" type="text/css">
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <!-- Animations -->
     <link rel="stylesheet" href="./css/animation.css" type="text/css">
     <!-- Icon -->
     <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.4.2/uicons-bold-straight/css/uicons-bold-straight.css'>
     <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.4.2/uicons-solid-rounded/css/uicons-solid-rounded.css'>
     <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.5.1/uicons-bold-rounded/css/uicons-bold-rounded.css'>
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/2.5.1/uicons-regular-rounded/css/uicons-regular-rounded.css'>
     <!-- JavaScript -->
     <script defer src="./app.js"></script>
     <!-- Google Map API -->
@@ -28,7 +33,31 @@
 </head>
 <body>
     <div id="header">
-        <button class="header-ham"><i class="fi fi-br-bars-sort"></i></button>
+        <button id="header-ham" class="header-ham"><i class="fi fi-br-bars-sort"></i></button>
+    </div>
+    <div id="menu">
+        <i id="header-menu" class="fi fi-br-circle-xmark"></i>
+        <p>FOOD ART</p>
+        <div>
+            <i class="fi fi-rr-home"></i>
+            <a onclick="closeMenu()" href="#home"><button>HOME</button></a>
+        </div>
+        <div>
+            <i class="fi fi-rr-heart"></i>
+            <a onclick="closeMenu()" href="#recomendation"><button>RECOMMENDATION</button></a>
+        </div>
+        <div>
+            <i class="fi fi-rr-shield-check"></i>
+            <a onclick="closeMenu()" href="#reason"><button>REASON</button></a>
+        </div>
+        <div>
+            <i class="fi fi-rr-phone-call"></i>
+            <a onclick="closeMenu()" href="#contact"><button>CONTACT</button></a>
+        </div>
+        <div>
+            <i class="fi fi-rr-marker"></i>
+            <a onclick="closeMenu()" href="#map"><button>MAP</button></a>
+        </div>          
     </div>
     <div id="home">
         <div class="home-left">
@@ -39,12 +68,12 @@
                 Elevating Your Food, One Plate at a Time
             </h3>
             <button class="hiddenL --delay-fast-off3">
-                <p>Dine Now</p>
+                <a href="#map">Dine Now</a>
                 <i class="fi fi-sr-marker"></i>
             </button>
         </div>
         <div class="home-right background">
-            <img class="hiddenRTR animate --delay-normal" src="./images/homeFood.png" alt="">
+            <img class="hiddenRTR animate --delay-normal" src="../images/homeFood.png" alt="">
         </div>
     </div>
     <div id="recomendation">
@@ -52,53 +81,56 @@
             Popular Dishes
         </h2>
         <div class="reco-cards mar-bot mar-sides">
-            <div class="reco-cards-sidecard hiddenL animate --delay-fast">
+            <div class="reco-cards-subcard hiddenL animate --delay-fast">
                 <img src="./images/menu.png" alt="">
-                <h3>Food Name</h3>
-                <h4>
-                    Everyone was curious about the large white blimp that 
-                    appeared overnight. We need to rent a room for our 
-                    party. I was very proud of my nickname throughout high 
-                    school but today- I couldn’t be any different to what my 
-                    nickname was.
-                </h4>
-                <p>
-                    330 calories
-                </p>
+                <div class="reco-cards-subcard-desc">
+                    <h3>Beignets d'Avocat au Bacon</h3>
+                    <h4>
+                        crispy fritters layered with creamy avocado and topped with 
+                        savory bacon strips. This dish features golden fritters made 
+                        from fresh ingredients, complemented by a medley of greens 
+                        and a tangy sauce. 
+                    </h4>
+                    <p>
+                        300 calories
+                    </p>
+                </div>
             </div>
-            <div class="reco-cards-maincard hiddenL animate --delay-fast-off1">
+            <div class="reco-cards-subcard hiddenL animate --delay-fast">
                 <img src="./images/menu2.png" alt="">
-                <h3>Food Name</h3>
-                <h4>
-                    Everyone was curious about the large white blimp that 
-                    appeared overnight. We need to rent a room for our 
-                    party. I was very proud of my nickname throughout high 
-                    school but today- I couldn’t be any different to what my 
-                    nickname was.
-                </h4>
-                <p>
-                    330 calories
-                </p>
+                <div class="reco-cards-subcard-desc">
+                    <h3>Poulet Grillé aux Légumes de Saison</h3>
+                    <h4>
+                        grilled chicken breast served with a medley of fresh 
+                        seasonal vegetables and a rich, savory sauce. contains tender 
+                        chicken, asparagus, baby carrots, and bell peppers, elegantly 
+                        garnished with a light herb drizzle. 
+                    </h4>
+                    <p>
+                        230 calories
+                    </p>
+                </div>
             </div>
-            <div class="reco-cards-sidecard hiddenL animate --delay-fast-off3">
+            <div class="reco-cards-subcard hiddenL animate --delay-fast">
                 <img src="./images/menu3.png" alt="">
-                <h3>Food Name</h3>
-                <h4>
-                    Everyone was curious about the large white blimp that 
-                    appeared overnight. We need to rent a room for our 
-                    party. I was very proud of my nickname throughout high 
-                    school but today- I couldn’t be any different to what my 
-                    nickname was.
-                </h4>
-                <p>
-                    330 calories
-                </p>
+                <div class="reco-cards-subcard-desc">
+                    <h3>Pancakes à la Banane avec Saucisse</h3>
+                    <h4>
+                        Savor our fluffy pancakes topped with fresh banana slices 
+                        and paired with savory sausage medallions features a blend 
+                        of sweet and savory flavors, containing flour, eggs, milk, 
+                        bananas, and premium sausage.
+                    </h4>
+                    <p>
+                        450 calories
+                    </p>
+                </div>
             </div>
         </div>
         <a href="">See All Dishes...</a>
-        <div class="reco-deco background"></div>
+        <div class="reco-deco"></div>
     </div>
-    <div id="reason">
+    <div id="reason" class="mar-top">
         <h2>Why Choose Us</h2>
         <div class="reason-lists">
             <div class="reason-lists-sub hiddenL animate --delay-fast">
@@ -115,7 +147,7 @@
             </div>
         </div>
     </div>
-    <div id="contact">
+    <div id="contact" class="mar-top">
         <div class="contact-left">
             <img src="./images/building.jpg" alt="">
         </div>

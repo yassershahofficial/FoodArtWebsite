@@ -1,22 +1,31 @@
 *,html,body{
     padding: 0;
     margin: 0;
-    font-family: "Poppins", sans-serif;
+    font-family: "Inter", sans-serif;
     scroll-behavior: smooth;
     font-size: 16px;
     z-index: 4;
     --white: #fff;
     --darkwhite: #f5f5f7;
     --grey: #6e6e73;
+    --darkgrey: #1F1F1F;
     --black: #1d1d1f;
+    /* --white: #F5EFED; */
+    --darkblue: #141414;
+    --red: #CC0300;
 }
 body{
     overflow-x: hidden;
-    color: var(--black);
+    color: var(--darkwhite);
+    background-color: var(--darkblue);
+    width: 100%;
 }
 h1,h2,h3,h4,p,a{
     position: relative;
     z-index: 5;
+}
+i,a{
+    color: var(--darkwhite);
 }
 a{
     cursor: pointer;
@@ -26,8 +35,9 @@ button{
     cursor: pointer;
     border: none;
 }
-button p{
+button a{
     margin-right: 10px;
+    font-size: 1.1rem;
 }
 h1{
     font-size: 7rem;
@@ -38,7 +48,7 @@ h2{
 h3{
     font-size: 1.3rem;
 }
-h4{
+h4,p{
     font-size: 1.1rem;
 }
 .mar-bot{
@@ -47,6 +57,9 @@ h4{
 .mar-sides{
     margin-left: 3%;
     margin-right: 3%;
+}
+.mar-top{
+    margin-top: 9rem;
 }
 .background{
     z-index: 1;

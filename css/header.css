@@ -1,5 +1,4 @@
 #header{
-    height: 60px;
     position: fixed;
     top: 0;
     width: 100vw;
@@ -10,14 +9,79 @@
     font-size: 1.6rem;
 }
 .header-ham{
+    height: 60px;
     background-color: transparent;
-    padding: 3px 6px;
+    padding: 1px 16px;
     margin-left: 6%;
     border-radius: 50%;
 }
 .header-ham:hover{
-    background-color: rgba(210, 210, 210, 0.6);
+    background-color: var(--red);
 }
 .header-ham:active{
     opacity: 0.5;
+}
+#menu{
+    position: fixed;
+    display: grid;
+    grid-template-rows: 7rem 5rem 5rem 5rem 5rem 5rem;
+    height: 100vh;
+    width: 17rem;
+    background-color: var(--darkblue);
+    z-index: 7;
+    text-align: center;
+    align-items: center;
+    visibility: hidden;
+}
+#menu div{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    margin-left: 1rem;
+}
+#menu div i{
+    width: 10%;
+    height: 100%;
+    margin-top: 1.9rem;
+    margin-right: -2.2rem;
+    color: var(--white);
+    z-index: 8;
+}
+#menu div a{
+    width: 80%;
+    height: 100%;
+    padding-left: 2.2rem;
+    border-radius: 4%;
+}
+#menu div a:hover{
+    background-color: var(--red);
+}
+#menu div a button{
+    width: 100%;
+    height: 100%;
+    text-align: left;
+    background-color: transparent;
+    color: var(--white);
+}
+.fi-br-circle-xmark{
+    position: fixed;
+    top: 1rem;
+    left: 15rem;
+    padding: 5px 7px;
+    border-radius: 50%;
+}
+.fi-br-circle-xmark:hover{
+    background-color: var(--red);
+}
+@media(max-width:640px){
+    #menu{
+        width: 100%;
+    }
+    .fi-br-circle-xmark{
+        right: 1rem;
+        left: unset;
+    }
+    #menu div a{
+        margin-left: -0.6rem;
+    }
 }

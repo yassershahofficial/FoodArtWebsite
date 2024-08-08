@@ -1,10 +1,8 @@
 #home{
-    background-color: var(--darkwhite);
     display: grid;
     grid-template-columns: 60% 40%;
     height: 90vh;
-    overflow-y: hidden;
-    overflow-x: hidden;
+    overflow: hidden;
 }
 .home-left{
     display: flex;
@@ -19,13 +17,19 @@
 }
 .home-left h3{
     min-width: 30rem;
-    color: var(--grey);
+    color: var(--red);
 }
 .home-left button{
     display: flex;
     background-color: var(--white);
     padding: 10px 20px;
     margin-top: 3rem;
+}
+.home-left button i{
+    color: var(--black);
+}
+.home-left button a{
+    color: var(--black);
 }
 .home-left button:hover{
     opacity: 0.8;
