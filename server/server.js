@@ -13,4 +13,8 @@ app.get('/', (req,res) => {
     res.render("index");
 })
 
+app.get('/list-of-dishes', (req,res) => {
+    res.render("dishes");
+})
+
 app.listen(PORT, () => console.log(`Server is listening in ${PORT}`))
