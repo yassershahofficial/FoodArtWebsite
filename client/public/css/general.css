@@ -61,6 +61,9 @@ h4,p{
 .mar-top{
     margin-top: 9rem;
 }
+.mar-top-s{
+    margin-top: 4rem;
+}
 .background{
     z-index: 1;
 }

@@ -1,17 +1,16 @@
 body{
-    padding-bottom: 1000px;
+    padding-bottom: 5rem;
 }
 h1{
-    background-color: aquamarine;
     display: block;
-    margin: 0 auto;
+    margin: 2rem auto 3rem;
     text-align: center;
 }
 .section{
     display: block;
 }
 .section-top{
-    background-color: purple;
+    /* background-color: purple; */
     display: flex;
     justify-content: space-between;
     padding: 0 2rem;
@@ -34,21 +33,28 @@ h1{
     opacity: 0.4;
 }
 .section-bot{
-    border: 1px solid red;
+    /* border: 1px solid red; */
     display: grid;
     grid-template-columns: 30% 30% 30%;
     column-gap: 2%;
     row-gap: 4%;
+    margin: 0 1rem;
     justify-content: center;
+    overflow: hidden;
+    padding-bottom: 5%;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+    border-radius: 3%;
+}
+.minimize{
     height: 16rem;
-    overflow-y: hidden;
 }
 .section-bot-dishes{
-    border: 1px solid blue;
+    /* border: 1px solid blue; */
     position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: end;
 }
 .section-bot-dishes:hover > .section-bot-dishes-desc{
     visibility: visible;
@@ -67,4 +73,55 @@ h1{
     text-align: left;
     padding: 12% 4%;
     visibility: hidden;
+    margin-bottom: -22%;
+}
+
+@media(min-width:1200px){
+    .section-bot{
+        grid-template-columns: 25% 25% 25% 25%;
+        column-gap: 0;
+        row-gap: 2rem;
+    }
+    .section-bot-dishes-desc{
+        padding: 0 1.5rem;
+        margin-bottom: 1rem;
+    }
+    .minimize{
+        height: 18rem;
+    }
+}
+
+@media(max-width:900px){
+    .section-bot{
+        grid-template-columns: 50% 50%;
+        column-gap: 0;
+        row-gap: 2rem;
+    }
+    .section-bot-dishes-desc{
+        padding: 0 0;
+        margin-bottom: 2rem;
+    }
+    .minimize{
+        height: 20rem;
+    }
+}
+
+@media(max-width:760px){
+    .minimize{
+        height: 16rem;
+    }
+    .section-bot-dishes-desc h4{
+        visibility: hidden;
+        display: none;
+    }
+}
+
+@media(max-width:640px){
+    .minimize{
+        height: 12rem;
+    }
+    .section-bot-dishes-desc{
+        padding: 0 0;
+        margin-bottom: 2rem;
+    }
 }
