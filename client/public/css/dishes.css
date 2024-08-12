@@ -48,6 +48,12 @@ h1{
 .minimize{
     height: 16rem;
 }
+.visibleOnMedia{
+    visibility: hidden;
+}
+.visibleOnMedia2{
+    visibility: visible;
+}
 .section-bot-dishes{
     /* border: 1px solid blue; */
     position: relative;
@@ -89,6 +95,9 @@ h1{
     .minimize{
         height: 18rem;
     }
+    .visibleOnMedia2{
+        visibility: hidden;
+    }
 }
 
 @media(max-width:900px){
@@ -103,6 +112,9 @@ h1{
     }
     .minimize{
         height: 20rem;
+    }
+    .visibleOnMedia{
+        visibility: visible;
     }
 }
 
